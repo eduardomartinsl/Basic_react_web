@@ -4,13 +4,12 @@ import { BrowserRouter } from 'react-router-dom'
 import Container from '../components/container'
 import Footer from '../components/footer'
 import Header from '../components/header'
-import Routes from '../components/Routes'
 
-const App = () => (
+const App = ({children}) => (
     <BrowserRouter>
         <Header />
         <Container>
-            <Routes />
+            {children}
         </Container>
         <Footer />
     </BrowserRouter>
